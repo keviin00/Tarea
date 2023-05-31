@@ -81,7 +81,7 @@ const mult = function(a, b){return a*b}
  console.log(div(a,b));
  console.log(resta(a,b));
  */
- 
+ /*
  const suma  = (a,b) => a + b
  const resta = (a,b) => a - b
  //Si una función es una sola línea con retorno y un parámetro puede evitar escribir los ()
@@ -92,5 +92,27 @@ const mult = function(a, b){return a*b}
  let nuevoPrecio = resta(suma(precioProducto, iva(precioProducto)), descuento) 
  console.log(nuevoPrecio);
  console.log(descuento);
- 
- 
+ */
+
+
+const memoria = 17500
+const fuente  = 53341
+const motherboard = 40000
+const disk = 15000
+const procs = 70000
+const gabinete = 25000
+
+let productos = [];
+let entrada
+let aux 
+
+do{
+    entrada = prompt(`ingrese un producto o ponga "salir"`);
+    aux = entrada.toLowerCase();
+    if (aux !== "salir"){
+        productos.push(entrada);
+        console.log(productos);
+    }
+}while(aux !=="salir");
+console.log("gracias por venir");
+
